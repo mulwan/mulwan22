@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isometric 3D Crafter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="topbar">
+    <h1>3D Crafter</h1>
+    <input type="file" id="upload" accept="image/*" capture="environment" />
+    <button id="processBtn">Proses ke 3D</button>
+  </header>
+
+  <main id="content">
+    <section id="preview">
+      <h2>Preview</h2>
+      <img id="previewImg" alt="Preview Gambar"/>
+    </section>
+    <section id="viewer">
+      <canvas id="threeCanvas"></canvas>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
